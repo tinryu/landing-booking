@@ -1,0 +1,281 @@
+.news-wrapper {
+  padding: 90px 0;
+}
+.news-gird,
+.news-recomment {
+  .card {
+    border: 1px solid #eeeeee;
+    border-radius: 0;
+    margin-bottom: 30px;
+    &:hover {
+      border: 1px solid $secondaryLightBrow;
+      cursor: pointer;
+      > .btn {
+        @include button(
+          $bg: $secondaryLightBrow,
+          $color: $secondaryLight,
+          $fontWeight: 400
+        );
+      }
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "Poppins-Bold";
+      line-height: 27px;
+      padding: 15px 0 0 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .date {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 18px;
+      padding: 15px 0;
+    }
+    .content {
+      font-size: 15px;
+      font-weight: 300;
+      padding: 0 15px 15px 15px;
+    }
+    .btn {
+      @include button(
+        $bg: $secondaryLightRed,
+        $color: $primaryBlack300,
+        $fontWeight: 400
+      );
+      width: 100%;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.paginations {
+  .pagin {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    li {
+      list-style: none;
+      margin: 0 10px;
+      &.active {
+        a {
+          color: $primaryBlack300;
+        }
+      }
+      a {
+        color: #909594;
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+        font-size: 15px;
+      }
+    }
+  }
+  .prev {
+    position: relative;
+    @include nav-slick();
+    &:before {
+      content: " ";
+      width: 60px;
+      height: 1px;
+      background-color: $primaryBlack300;
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 75px;
+    }
+    &:hover {
+      color: $secondaryLightBrow;
+    }
+  }
+  .next {
+    position: relative;
+    @include nav-slick();
+    &:before {
+      content: " ";
+      width: 60px;
+      height: 1px;
+      background-color: $primaryBlack300;
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 45px;
+    }
+    &:hover {
+      color: $secondaryLightBrow;
+    }
+  }
+}
+
+.feature-news {
+  .left-g {
+    .item {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(79, 79, 79, 0) 68.02%,
+        #161616 96.96%
+      );
+      width: 100%;
+      height: 100%;
+      .g-title {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 30px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        color: $secondaryLight;
+        .title {
+          font-weight: 700;
+          font-family: "Poppins-Bold";
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+  .right-g {
+    .card {
+      border: none;
+      margin-bottom: 1.8rem;
+      .card-body {
+        padding: 0;
+        .title {
+          font-weight: 700;
+          font-family: "Poppins-Bold";
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .date {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 1px;
+          margin: 15px 0;
+        }
+        .des {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 22px;
+          letter-spacing: 1px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 40vh;
+        }
+      }
+    }
+  }
+}
+
+.detail {
+  .pagination {
+    justify-content: space-between;
+    position: relative;
+    .prev {
+      @extend .prev;
+      .subtitle {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        display: block;
+        width: 20rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        color: #909594;
+      }
+    }
+    .next {
+      @extend .next;
+      .subtitle {
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+        display: block;
+        width: 20rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        color: #909594;
+      }
+    }
+  }
+  .news-recomment {
+    .horizontal {
+      width: 360px;
+      height: 1px;
+      background: $secondaryLight;
+      margin: 60px auto 0 auto;
+    }
+    .title-recoment {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 60px 0 45px 0;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right-g {
+    .card {
+      .card-body {
+        .des {
+          width: 50vh !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .feature-news {
+    .right-g {
+      .card {
+        .card-body {
+          .des {
+            width: 22vh !important;
+          }
+        }
+      }
+    }
+  }
+  .detail {
+    .pagination {
+      .prev, .next {
+        .subtitle {
+          width: 9rem;
+        }
+      }
+    }
+  } 
+}

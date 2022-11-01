@@ -1,0 +1,327 @@
+.about {
+    padding: 90px 0;
+
+    .left {
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+
+        &>div {
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+            margin-top: var(--bs-gutter-y);
+        }
+
+        .img {
+            overflow: hidden;
+        }
+
+        .img-1 {
+            margin-bottom: 25px;
+        }
+
+        .img-2 {
+            margin-top: 100px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .right {
+        padding-top: 100px;
+
+        .heading-title {
+            @include titlle-home;
+        }
+
+        .sub-title {
+            color: $primaryBlack300;
+            font-family: "Poppins-Bold";
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 75px;
+
+            span {
+                font-weight: 300;
+            }
+        }
+
+        .content {
+            font-size: 15px;
+            line-height: 30px;
+            padding: 30px 0;
+        }
+
+        .btn {
+            @include button();
+            padding: 15px 68px;
+
+            &:hover {
+                background-color: $secondaryLightRed;
+                color: $primaryBlack300;
+            }
+        }
+    }
+}
+
+.service {
+    background-color: $secondaryLight;
+    padding: 90px 0;
+
+    .heading-title {
+        @include titlle-home($padding-bottom: 25px);
+    }
+
+    .lists {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        .item {
+            position: relative;
+            padding: 16px 20px;
+            font-size: 15px;
+            line-height: 22px;
+            display: flex;
+            flex-flow: row;
+
+            &:hover {
+                background: #ffffff;
+                box-shadow: 7px 8px 30px rgba(101, 81, 42, 0.15);
+
+                & .arrow-right {
+                    display: block;
+                }
+            }
+
+            .icon {
+                flex: 10%;
+                text-align: left;
+            }
+
+            .content {
+                flex: 90%;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .arrow-right {
+                display: none;
+                position: absolute;
+                top: 35px;
+                right: 30px;
+                color: $secondaryLightBrow;
+            }
+        }
+    }
+
+    .btn {
+        @include button();
+        margin: 20px 0;
+        padding: 15px 70px;
+
+        &:hover {
+            background-color: $secondaryLightRed;
+            color: $primaryBlack300;
+        }
+    }
+}
+
+.room {
+    padding: 90px 0 0 0;
+
+    .heading-title {
+        @include titlle-home;
+    }
+}
+
+.gallery {
+    padding: 90px 0 0 0;
+
+    .heading-title {
+        @include titlle-home;
+    }
+
+    .react-images-grid__photo {
+        height: 40vh !important;
+    }
+}
+
+.news {
+    padding: 90px 0;
+
+    .heading-title {
+        @include titlle-home;
+    }
+
+    .btn-all {
+        @include button();
+        padding: 15px 68px;
+        width: 210px;
+        margin: 45px auto 0 auto;
+        text-align: center;
+        display: block;
+
+        &:hover {
+            background-color: $secondaryLightRed;
+            color: $primaryBlack300;
+        }
+    }
+
+    .items {
+        border: 1px solid #eeeeee;
+
+        &:hover {
+            border: 1px solid $secondaryLightBrow;
+
+            >.btn {
+                @include button($bg: $secondaryLightBrow,
+                    $color: $secondaryLight,
+                    $fontWeight: 400);
+            }
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Poppins-Bold";
+            line-height: 27px;
+            padding: 15px 15px 0 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .datetime {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            padding: 15px;
+        }
+
+        .content {
+            font-size: 15px;
+            font-weight: 300;
+            padding: 0 15px 15px 15px;
+        }
+
+        .btn {
+            @include button($bg: $secondaryLightRed,
+                $color: $primaryBlack300,
+                $fontWeight: 400);
+            width: 100%;
+            text-align: center;
+            padding: 18px 0;
+            font-size: 16px;
+        }
+    }
+}
+
+footer {
+    background: #3a4241;
+    color: $secondaryLight;
+
+    .border-top {
+        opacity: 10%;
+    }
+
+    .question {
+        color: $primaryBlack300;
+        background-color: $secondaryLightRed;
+        text-align: center;
+
+        h3 {
+            color: $primaryBlack300;
+        }
+
+        >div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .form-subscribe {
+        p {
+            line-height: 35px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        span {
+            display: block;
+            font-size: 9.5px;
+            line-height: 35px;
+            font-weight: 400;
+            color: $secondaryLightRed;
+        }
+
+        .input-group {
+            position: relative;
+
+            input {
+                height: 60px;
+                border-radius: 5px !important;
+            }
+
+            button {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                z-index: 10;
+                background-color: $secondaryLightRed;
+                height: 40px;
+                border-radius: 5px !important;
+            }
+        }
+    }
+
+    ul.info {
+        li {
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    ul.q-link {
+        li {
+            a {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 45px;
+                color: $secondaryLight  !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news {
+        .col-sm-6 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .about {
+        .right {
+            padding-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news,
+    .about,
+    .service {
+        padding: 40px 0;
+    }
+
+    .room {
+        padding: 40px 0 0 0;
+    }
+}

@@ -1,0 +1,30 @@
+.contact-us {
+  padding-top: 90px;
+  padding-bottom: 45px;
+  .svg-inline--fa {
+    margin-right: 5px;
+  }
+  .info {
+    list-style: none;
+    background: $secondaryLightRed;
+    padding: 20px 30px 20px 50px;
+  }
+  .btn {
+    @include button();
+  }
+  h2 {
+    font-weight: 700;
+    font-family: "Poppins-Bold";
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+  }
+}
+.map {
+  padding-bottom: 90px;
+}

@@ -1,0 +1,129 @@
+.date-icon {
+  @include Icon();
+  background: url(../public/assets/icon/dateIcon.png) center center no-repeat;
+}
+.room-icon {
+  @include Icon();
+  background: url(../public/assets/icon/roomIcon.png) center center no-repeat;
+}
+.adult-icon {
+  @include Icon();
+  background: url(../public/assets/icon/AduIcon.png) center center no-repeat;
+}
+.children-icon {
+  @include Icon();
+  background: url(../public/assets/icon/childIcon.png) center center no-repeat;
+}
+.search-room {
+  background: #f1f2f3;
+  padding: 17px 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  align-items: center;
+  z-index: 11;
+  label {
+    font-family: "Poppins";
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $primaryBlack300;
+  }
+  .divide {
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 1px;
+      background: #cfcfcf;
+    }
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .form-control,
+  .form-select {
+    position: relative;
+    width: 120px;
+    border: 0;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #909594;
+  }
+  .form-select {
+    width: 60px;
+    margin-left: 25px;
+  }
+  .btn-booking {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 14rem;
+    padding: 35px;
+    font-size: 16px;
+    @include button();
+  }
+  .btn-apply {
+    width: 100%;
+    padding: 15px;
+    margin-top: 3px;
+    @include button();
+  }
+}
+.wrap-search {
+  background: #f1f2f3;
+}
+.search-room-child {
+  @extend .search-room;
+  position: relative !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-room {
+    padding: 15px;
+    .btn-booking {
+      width: 10rem;
+      padding: 20px;
+    }
+  }
+}
+@media screen and (max-width: 844px) {
+  .search-room {
+    position: static;
+    .divide {
+      display: none;
+    }
+    .check-in, 
+    .check-out {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .form-control {text-align: center;}
+    }
+    .room-sf, 
+    .adult-sf,
+    .children-sf {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .btn-booking {
+      position: static;
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+    }
+  }
+}

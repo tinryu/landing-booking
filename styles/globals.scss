@@ -1,0 +1,93 @@
+@mixin button-menu() {
+  color: $primaryBlack300 !important;
+  border-bottom: 1px solid transparent;
+  position: relative;
+  display: inline-flex;
+  border-radius: 0 !important;
+  &:hover {
+    cursor: pointer;
+    border-bottom: 1px solid $secondaryLightBrow !important;
+    transition: 0.8s linear;
+  }
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  &.active {
+    background: transparent !important;
+    border-bottom: 1px solid $secondaryLightBrow !important;
+  }
+}
+@mixin button(
+  $bg: $secondaryLightBrow,
+  $color: $secondaryLight,
+  $fontWeight: 700
+) {
+  background-color: $bg;
+  color: $color;
+  font-weight: $fontWeight;
+  font-family: "Poppins-Bold"; 
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+}
+@mixin titlle-home($margin: 0, $padding-bottom: 45px) {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: $secondaryLightBrow;
+  text-transform: capitalize;
+  padding-bottom: $padding-bottom;
+  margin: $margin;
+}
+@mixin headline {
+  font-family: "Poppins-Bold";
+  color: $primaryBlack300;
+}
+@mixin nav-slick {
+  // width: auto;
+  font-size: 15px;
+  font-weight: 500;
+  color: $primaryBlack300;
+}
+@mixin Icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 5px;
+}
+@import "_custom.scss";
+@import "_themes-vars.module.scss";
+@import "_home.scss";
+@import "_nav.scss";
+@import "_searchRoom.scss";
+@import "_slideshowSlick.scss";
+@import "_about.scss";
+@import "_news.scss";
+@import "_contact.scss";
+@import "_room.scss";
+@import "_swiperSlideShow.scss";
+@import "_service.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $primaryBlack300;
+  text-decoration: none;
+  &:hover {
+    color: $primaryBlack300;
+  }
+}
+  

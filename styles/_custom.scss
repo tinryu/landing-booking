@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.m-filter {
+    @include Icon();
+    background: url(../public/assets/icon/filter.png) center center no-repeat;
+    display: none;
+}
+
+@include media-breakpoint-down(lg) {
+    .m-filter {
+        display: block;
+    }
+}

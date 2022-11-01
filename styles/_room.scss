@@ -1,0 +1,721 @@
+@import "_icon.scss";
+
+.rooms {
+  .sort-bar {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 60px 0;
+
+    .number {
+      span {
+        color: $primaryBlack300;
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+      }
+    }
+  }
+
+  .gr-sort {
+    display: flex;
+    flex-flow: row;
+
+    .grid-view {
+      background: url(../public/assets/icon/grid-view.png) center center no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .list-view {
+      background: url(../public/assets/icon/listview.png) center center no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    select {
+      padding: 5px 15px 5px 0;
+    }
+  }
+
+  .filter {
+    .title {
+      background-color: #f1f2f3;
+      font-weight: 700;
+      font-family: "Poppins-Bold";
+      font-size: 24px;
+      color: $primaryBlack300;
+      display: flex;
+      justify-content: space-between;
+      text-transform: capitalize;
+      border-bottom: 1px solid rgba(207, 207, 207, 0.5);
+      padding: 20px;
+      margin: 0;
+
+      a {
+        font-size: 12px;
+        font-weight: 300;
+        color: $primaryGrey300;
+        padding: 10px 0;
+        text-decoration: underline;
+      }
+    }
+
+    .content {
+      background-color: #f1f2f3 !important;
+      padding: 20px;
+
+      h5 {
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+        font-size: 15px;
+        color: $primaryBlack300;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+
+        li {
+          padding-bottom: 10px;
+          display: flex;
+
+          input[type="checkbox"] {
+            position: relative;
+            top: 2px;
+            cursor: pointer;
+            margin: 0 15px 0 0;
+            width: 15px;
+            height: 15px;
+
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              border: 1px solid #c4c4c4;
+              top: 0;
+              left: 0;
+              background-color: #e9e9e9;
+            }
+
+            &:checked:before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              top: 0;
+              left: 0;
+              border: 2px solid #555555;
+              border-radius: 3px;
+              background-color: white;
+            }
+
+            &:checked:after {
+              content: "";
+              display: block;
+              width: 5px;
+              height: 10px;
+              border: solid black;
+              border-width: 0 2px 2px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+              position: absolute;
+              top: 2px;
+              left: 6px;
+            }
+          }
+
+          label {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper.list-view {
+    .image{
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .title {
+      font-weight: 700;
+      font-family: "Poppins-Bold";
+      font-size: 20px;
+      color: $primaryBlack300;
+      margin: 0;
+    }
+
+    .des {
+      font-weight: 300;
+      font-size: 15px;
+      color: $primaryGrey300;
+      padding: 15px 0;
+    }
+
+    .services {
+      span {
+        font-size: 15px;
+        font-weight: 300;
+        color: $primaryBlack300;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .price {
+      color: $primaryGrey100;
+      font-size: 12px;
+      font-weight: 300;
+      text-align: right;
+      position: relative;
+
+      .number {
+        color: #8c6239;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+      }
+
+      .text {
+        display: block;
+        color: $primaryBlack300;
+        font-weight: 300;
+        font-size: 12px;
+      }
+    }
+
+    .info {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+          font-size: 12px;
+          font-weight: 300;
+          margin-bottom: 15px;
+          color: $primaryBlack300;
+        }
+      }
+    }
+
+    .btn-booking {
+      @include button();
+      font-size: 1rem;
+      position: absolute;
+      top: 30%;
+      right: 0;
+      width: 160px;
+      padding: 19px;
+
+      &:hover {
+        background-color: $secondaryLightRed;
+        color: $primaryBlack300;
+      }
+    }
+  }
+
+  .wrapper.grid-view {
+    .item {
+      border: 1px solid #C4C4C4;
+
+      &:hover {
+        border: 1px solid $secondaryLightBrow;
+        cursor: pointer;
+
+        >.price .btn-booking {
+          @include button($bg: $secondaryLightRed,
+            $color: $secondaryLight,
+            $fontWeight: 400);
+        }
+      }
+      .image{
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .title {
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+        font-size: 20px;
+        color: $primaryBlack300;
+        margin: 0;
+      }
+
+      .des {
+        font-weight: 300;
+        font-size: 15px;
+        color: $primaryGrey300;
+      }
+
+      .services {
+        span {
+          font-size: 15px;
+          font-weight: 300;
+          color: $primaryBlack300;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+      .info {
+        padding: 15px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            font-size: 12px;
+            font-weight: 300;
+            margin-bottom: 0;
+            color: $primaryBlack300;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .price {
+        color: $primaryGrey100;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: left;
+        position: relative;
+
+        .number {
+          color: #8c6239;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: "Poppins-Bold";
+          display: block;
+        }
+
+        .text {
+          display: block;
+          color: $primaryBlack300;
+          font-weight: 300;
+          font-size: 12px;
+          padding-top: 10px;
+        }
+      }
+
+      .btn-booking {
+        @include button();
+        font-size: 1rem;
+        width: 100%;
+        padding: 19px;
+
+        &:hover {
+          background-color: $secondaryLightRed;
+          color: $primaryBlack300;
+        }
+      }
+    }
+  }
+
+  .view-rooms {
+    opacity: 0;
+  }
+
+  .view-rooms-enter {
+    opacity: 0;
+  }
+
+  .view-rooms-exit {
+    opacity: 1;
+  }
+
+  .view-rooms-enter-active {
+    opacity: 1;
+  }
+
+  .view-rooms-exit-active {
+    opacity: 0;
+  }
+
+  .view-rooms-enter-active,
+  .view-rooms-exit-active {
+    transition: opacity 500ms;
+  }
+}
+
+.multiRangeSlider {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .slider {
+    position: relative;
+    width: 200px;
+
+    .slider__track {
+      background-color: #c4c4c4;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .slider__range {
+      background-color: #8c6239;
+      z-index: 2;
+    }
+
+    .slider__left-value,
+    .slider__right-value {
+      font-weight: 300;
+      background: transparent;
+      color: #909594;
+      font-size: 12px;
+      top: -45px;
+      border: 1px solid #c4c4c4;
+      width: 45%;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .slider__left-value {
+      left: 0;
+    }
+
+    .slider__right-value {
+      right: 0;
+    }
+
+    .slider__track,
+    .slider__range,
+    .slider__left-value,
+    .slider__right-value {
+      position: absolute;
+    }
+
+    .slider__track,
+    .slider__range {
+      border-radius: 3px;
+      height: 5px;
+    }
+  }
+
+  /* Removing the default appearance */
+  .thumb,
+  .thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 200px;
+    outline: none;
+  }
+
+  .thumb--left {
+    z-index: 3;
+  }
+
+  .thumb--right {
+    z-index: 4;
+  }
+
+  /* For Chrome browsers */
+  .thumb::-webkit-slider-thumb {
+    background-color: #c4c4c4;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px #ced4da;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+  }
+
+  /* For Firefox browsers */
+  .thumb::-moz-range-thumb {
+    background-color: #c4c4c4;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px #ced4da;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+  }
+}
+// detail
+.detail {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 300;
+  color: $primaryBlack300;
+
+  .heading-title {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-family: "Poppins-Bold";
+      font-size: 50px;
+      font-weight: 700;
+      font-family: "Poppins-Bold";
+      color: $primaryBlack300;
+      margin: 0;
+    }
+
+    .price {
+      .number {
+        font-family: "Poppins-Bold";
+        font-size: 50px;
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+        color: $secondaryLightBrow;
+      }
+
+      .text {
+        font-family: "Poppins";
+        font-size: 12px;
+        font-weight: 300;
+        color: $primaryBlack300;
+      }
+    }
+  }
+
+  .descript {
+    font-size: 15px;
+    font-weight: 300;
+    color: $primaryGrey300;
+    margin-bottom: 45px;
+  }
+
+  .contents {
+    margin-bottom: 30px;
+  }
+
+  .facilities,
+  .additional {
+    margin-bottom: 30px;
+    .title {
+      font-family: "Poppins-Bold";
+      font-size: 18px;
+      font-weight: 700;
+      color: $primaryBlack300;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+  }
+
+  .accessories {
+    padding: 0  ;
+    li {
+      list-style: none;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      & > .item {
+        border: 1px dashed $primaryGrey200;
+        font-size: 12px;
+        font-weight: 300;
+        color: $primaryBlack300;
+        line-height: 30px;
+        height: 30px;
+        display: flex;
+      }
+
+      .icon {
+        margin: 4px 20px 4px 10px;
+      }
+
+      label {
+        color: $primaryBlack300;
+      }
+    }
+  }
+
+  .form-booking {
+    border: 1px solid #CFCFCF;
+    padding: 30px 20px;
+    display: block;
+    .form-control, .form-select {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 1px solid #EEEEEE;
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: $primaryGrey300;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      background: none;
+    }
+    .btn-booking {
+      @include button;
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+      color: #F7F5F1;
+    }
+  }
+}
+
+.other,
+.review {
+  margin-bottom: 30px;
+  > .title {
+    font-family: "Poppins-Bold";
+    font-size: 18px;
+    font-weight: 700;
+    color: $primaryBlack300;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+}
+.review {
+  .form-review {
+    .group-input {
+      display: flex;
+      margin-bottom: 20px;
+      .form-control {
+        border: 0;
+        border-bottom: 1px solid #EEEEEE;
+        border-radius: 0;
+        padding-left: 0;
+        color: $primaryBlack300;
+        resize: none;
+        &::placeholder {
+          color: $primaryGrey300;  
+        }
+      }
+    }
+    .ranking {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      label {
+        margin-right: 50px;
+      }
+    }
+    .check {
+      margin-right: 12px;
+    }
+    label[for="check-input"] {
+      font-size: 12px;
+      color: $primaryBlack300;
+    }
+    .btn-post{
+      @include button;
+      padding: 15px 90px 15px 70px;
+      & > svg{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.other {
+  .content {
+    .item {
+      border: 1px solid #EEEEEE;
+      .img {
+        width: 100%;
+      }
+      .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+        line-height: 35px;
+        .text {
+          margin-bottom: 0;
+          line-height: 35px;
+          font-family: "Poppins-Bold";
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: capitalize;
+        }
+        .des {
+          color: $primaryGrey300;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .rooms {
+    .wrapper {
+      .text {
+        display: none;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .detail {
+    .facilities,
+    .additional {
+      .accessories {
+        li {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .icon {
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+  .review {
+    .form-review {
+      .group-input {
+        flex-flow: column;
+        .form-control{
+          margin-bottom: 10px;
+        }
+      }
+      .ranking {
+        label {
+          width: 50%;
+          margin-right: 0;
+        }
+      }
+      .btn-post {
+        width: 100%;
+      }
+    }
+  }
+  .rooms {
+    .wrapper.list-view {
+      .btn-booking {
+        position: static;
+
+      }
+    }
+  }
+}

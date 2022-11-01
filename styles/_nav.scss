@@ -1,0 +1,94 @@
+nav[aria-label="breadcrumb"] {
+    background: #e5e5e5 url(../public/assets/images/breadcrumb.png) no-repeat center;
+    background-size: cover;
+    height: 387px;
+    width: 100%;
+    position: relative;
+
+    .breadcrumb {
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+
+        .breadcrumb-item {
+            &::before {
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 75px;
+                color: $secondaryLight;
+            }
+
+            &.active {
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 75px;
+                letter-spacing: 1px;
+                color: $secondaryLight;
+                text-transform: capitalize;
+                width: 300px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            a {
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 75px;
+                letter-spacing: 1px;
+                color: $secondaryLight;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.menu-top {
+    li {
+        line-height: 24px;
+
+        a {
+            @include button-menu();
+            font-weight: 500;
+            font-size: 13px;
+        }
+    }
+
+    .navbar-toggler {
+        border: 1px solid #3a4241;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-top {
+        background-color: $secondaryLight;
+
+        .navbar-brand {
+            margin: 0;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                display: block;
+            }
+        }
+    }
+    nav[aria-label=breadcrumb] {
+        height: 220px;
+        .breadcrumb {
+            bottom: 20px;
+            left: 20px;
+            .breadcrumb-item {
+                &::before,
+                a {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,192 @@
+.services-wrapper {
+    background: #FFFFFF;
+    .menu-bar {
+        background: #F1F2F3;
+        .item {
+            padding: 35px 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            color: #C4C4C4;
+            &.active {
+                background: $secondaryLightRed;
+                color: $primaryBlack300;
+                &.foods {
+                    &::before {
+                        background: url(../public/assets/icon/food-hover.png) center center no-repeat;
+                    }
+                }
+    
+                &.rooms {
+                    &::before {
+                        background: url(../public/assets/icon/room24.png) center center no-repeat;
+                    }
+                }
+    
+                &.meetings {
+                    &::before {
+                        background: url(../public/assets/icon/meeting24.png) center center no-repeat;
+                    }
+                }
+    
+                &.weddings {
+                    &::before {
+                        background: url(../public/assets/icon/wedding24.png) center center no-repeat;
+                    }
+                }
+    
+                &::before {
+                    content: "";
+                    width: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            &.foods {
+                &::before {
+                    background: url(../public/assets/icon/food.png) center center no-repeat;
+                }
+            }
+
+            &.rooms {
+                &::before {
+                    background: url(../public/assets/icon/room.png) center center no-repeat;
+                }
+            }
+
+            &.meetings {
+                &::before {
+                    background: url(../public/assets/icon/metting.png) center center no-repeat;
+                }
+            }
+
+            &.weddings {
+                &::before {
+                    background: url(../public/assets/icon/wedding.png) center center no-repeat;
+                }
+            }
+
+            &::before {
+                content: "";
+                width: 20px;
+                margin-right: 20px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: $secondaryLightRed;
+                color: $primaryBlack300;
+                &.foods {
+                    &::before {
+                        background: url(../public/assets/icon/food-hover.png) center center no-repeat;
+                    }
+                }
+    
+                &.rooms {
+                    &::before {
+                        background: url(../public/assets/icon/room24.png) center center no-repeat;
+                    }
+                }
+    
+                &.meetings {
+                    &::before {
+                        background: url(../public/assets/icon/meeting24.png) center center no-repeat;
+                    }
+                }
+    
+                &.weddings {
+                    &::before {
+                        background: url(../public/assets/icon/wedding24.png) center center no-repeat;
+                    }
+                }
+            }
+
+            .title {
+                font-size: 23px;
+                font-family: "Poppins-SemiBold";
+                margin: 0;
+                text-align: center;
+                color: #C4C4C4;
+            }
+        }
+    }
+    .content-bar {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        .food-beverage {
+            .our-food, .our-beverage {
+                font-size: 15px;
+                color: $primaryBlack300;
+                margin-bottom: 60px;
+                .title {
+                    font-size: 50px;
+                }
+            }
+            .our-menu {
+                .title {
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+            }
+            .list-menu{
+                display: flex;
+                flex-flow: wrap;
+                margin: 0 -15px;
+                .item {
+                    display: flex;
+                    width: 25%;
+                    padding: 0 15px;
+                    margin-bottom: 25px;
+                    p {
+                        font-size: 12px;
+                        padding: 20px 15px;
+                        border: 1px dashed rgba(144, 149, 148, 0.3);
+                        border-left: 0;
+                        margin: 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        max-height: 77px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+        .room-suite {
+            .slick-dots {
+                position: static;
+                margin: 0 -20px;
+                display: flex !important;
+                flex-flow: wrap;
+                li {
+                    width: 25%;
+                    height: 85px;
+                    padding: 0 20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .services-wrapper {
+        .menu-bar {
+            & > div {
+                flex-flow: column;
+            }
+        }
+        .content-bar {
+            .food-beverage {
+                .list-menu {
+                    .item {
+                        width: 33.3%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+// About
+.about-wrapper {
+  padding: 90px 0 0 0;
+  .content-about {
+    .gr-content {
+      .text {
+        color: $primaryBlack300;
+        font-family: "Poppins-Bold";
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 75px;
+        letter-spacing: 1px;
+        span {
+          font-weight: 300;
+        }
+      }
+      .des {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        color: $primaryBlack300;
+        letter-spacing: 1px;
+      }
+    }
+    .gr-img {
+      margin-top: 25px;
+      .img-1 {
+        margin-bottom: 20px;
+      }
+      .img-2 {
+        padding-top: 90px;
+        margin-bottom: 20px;
+        max-width: 420px;
+      }
+      .img-3 {
+        max-width: 277px;
+        float: right;
+      }
+      .img-4 {
+        max-width: 663px;
+      }
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+     
+    }
+  }
+  .timeline-about {
+    background: $secondaryLight;
+    margin: 90px 0 0 0;
+    padding: 90px 0;
+    .title {
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 75px;
+      letter-spacing: 1px;
+      padding-bottom: 30px;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      li.items {
+        .year {
+          font-size: 50px;
+        }
+        &.active,
+        &:hover {
+          cursor: pointer;
+          .icon {
+            background: url(../public/assets/icon/Circle-hover.png) no-repeat
+              center;
+          }
+          .year {
+            color: $secondaryLightBrow;
+          }
+        }
+        .icon {
+          background: url(../public/assets/icon/Circle.png) no-repeat center;
+          width: 36px;
+          height: 36px;
+          margin: 15px auto;
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 1px;
+            background: #d8d8d8;
+            position: absolute;
+            top: 18px;
+            left: 60px;
+          }
+        }
+        .des {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 30px;
+          letter-spacing: 1px;
+          color: #3a4241;
+        }
+        &:last-child {
+          .icon {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .end-about {
+    padding: 90px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    .content-about {
+      .gr-img {
+        .img-2 {
+          padding-top: 0;
+        }
+        .img {
+          width: 100%;
+          max-width: 100%;
+          height: 300px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .timeline-about {
+      ul {
+        li.items {
+          position: relative;
+          padding-left: 50px;
+          .year {
+            position: relative;
+          }
+          .icon {
+            position: absolute;
+            top: 5px;
+            margin-left: -50px;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+            &:after {
+              position: relative;
+              top: 17px;
+              left: 35px;
+              width: 70px;
+            }
+          }
+          &:last-child {
+            .icon {
+              &::after {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
