@@ -2,7 +2,7 @@ import { ReactElement, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import Layout from "../../components/layout";
 import Breadcrumb from "../../components/breadcrumb";
-import SearchRoom from "../../components/searchRoom";
+// import SearchRoom from "../../components/searchRoom";
 import Filter from "../../components/filter";
 import ListView from "../../components/room/listView";
 import GridView from "../../components/room/gridView";
@@ -12,9 +12,9 @@ export default function Room() {
   return (
     <>
       <Breadcrumb name="Room" />
-      <div className="container-fluid wrap-search">
+      {/* <div className="container-fluid wrap-search">
         <SearchRoom />
-      </div>
+      </div> */}
       <div className="container rooms">
         <div className="sort-bar row justify-content-between">
           <div className="number col justify-content-start">

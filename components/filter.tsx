@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import MultiRangeSlider from "./multiRangeSlider";
+import SearchRoomLeft from "./searchRoomLeft";
 
 const filters = [
   {
     title: 'Display',
-    lists: ['view by room','view by rate' ]
+    lists: ['view by room', 'view by rate']
   },
   {
     title: 'View',
@@ -29,6 +30,7 @@ const max = 500;
 export default function Filter() {
   return (
     <section className="filter col-lg-3 mb-md-5">
+      <SearchRoomLeft />
       <h4 className="title">
         Filter
         <div className="g-btn">

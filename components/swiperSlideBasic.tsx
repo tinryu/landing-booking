@@ -1,6 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { EffectFade } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Autoplay } from "swiper";
 import SearchRoom from "./searchRoom";
 
 // Import Swiper styles
@@ -11,10 +11,14 @@ export default function SwiperSlideBasic() {
     return (
         <section className="home-slide">
             <Swiper
-                modules={[EffectFade]}
+                modules={[Autoplay, EffectFade]}
                 className="swiper-home"
                 rewind={true}
                 effect={"fade"}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
             >
                 <SwiperSlide>
                     <div className="swiper-item">
@@ -33,10 +37,9 @@ export default function SwiperSlideBasic() {
                         </div>
                         </div>
                         <div className="swiper-slide-block row">
-                        <div className="swiper-slide-block__blank col-lg-7"></div>
                         <div
-                            className="swiper-slide-block__image col-lg-5"
-                            style={{ backgroundImage: "url(/assets/images/maskslide.png)" }}
+                            className="swiper-slide-block__image col"
+                            style={{ backgroundImage: "url(/assets/images/originalSlide.png)" }}
                         ></div>
                         </div>
                     </div>
@@ -58,10 +61,9 @@ export default function SwiperSlideBasic() {
                         </div>
                         </div>
                         <div className="swiper-slide-block row">
-                        <div className="swiper-slide-block__blank col-lg-7"></div>
                         <div
-                            className="swiper-slide-block__image col-lg-5"
-                            style={{ backgroundImage: "url(/assets/images/gallery1.png)" }}
+                            className="swiper-slide-block__image col"
+                            style={{ backgroundImage: "url(/assets/images/slide.png)" }}
                         ></div>
                         </div>
                     </div>
@@ -83,10 +85,9 @@ export default function SwiperSlideBasic() {
                         </div>
                         </div>
                         <div className="swiper-slide-block row">
-                        <div className="swiper-slide-block__blank col-lg-7"></div>
                         <div
-                            className="swiper-slide-block__image col-lg-5"
-                            style={{ backgroundImage: "url(/assets/images/maskslide.png)" }}
+                            className="swiper-slide-block__image col"
+                            style={{ backgroundImage: "url(/assets/images/originalSlide.png)" }}
                         ></div>
                         </div>
                     </div>

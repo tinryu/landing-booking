@@ -82,6 +82,69 @@
     @include button();
   }
 }
+.search-room-left {
+  border: 1px solid #CFCFCF;
+  padding: 30px;
+  align-items: center;
+  margin-bottom: 24px;
+  label {
+    font-family: "Poppins-Bold";
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $primaryBlack300;
+    padding: 0;
+  }
+  .divide {
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 1px;
+      background: #cfcfcf;
+    }
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+  .form-control,
+  .form-select {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #EEEEEE;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #909594;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+  }
+
+  .btn-booking {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    @include button();
+  }
+  .btn-apply {
+    width: 100%;
+    padding: 15px;
+    margin-top: 3px;
+    @include button();
+  }
+}
 .wrap-search {
   background: #f1f2f3;
 }
