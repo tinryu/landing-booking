@@ -3,13 +3,14 @@ import Layout from "../../components/layout";
 import Cover from "../../components/room/cover";
 import Other from "../../components/room/other";
 import Image from "next/image";
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as regularStart } from "@fortawesome/free-regular-svg-icons";
 import { faStar, faStarHalfStroke, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function DetailRoom() {
-  const router = useRouter();
+  // const router = useRouter();
+  // const { pid } = router.query;
   const [checkIn, setCheckIn] = useState("2022-04-21");
   const [checkOut, setCheckOut] = useState("2022-04-30");
   // if (router.isFallback) {

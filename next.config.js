@@ -4,17 +4,8 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     images: { layoutRaw: true },
+    forceSwcTransforms: true,
   },
-  // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-  //   config.plugins.push(
-  //     new webpack.ProvidePlugin({
-  //       $: "jquery",
-  //       jQuery: "jquery",
-  //       "window.jQuery": "jquery",
-  //     })
-  //   );
-  //   return config;
-  // },
 };
 
 module.exports = nextConfig;
