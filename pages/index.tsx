@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import Layout from "../components/layout";
-import SwiperSlide from "../components/swiperSlide";
+// import SwiperSlide from "../components/swiperSlide";
+import SwiperSlideBasic from "../components/swiperSlideBasic";
 import SwiperPadding from "../components/swiperPadding";
 import SlideshowAsNavFor from "../components/slideshowAsNavFor";
 // import SlideSlick from "../components/slideSlick";
@@ -13,7 +14,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Page() {
   return (
     <main>
-      <SwiperSlide />
+      <SwiperSlideBasic />
       <section className="about">
         <div className="container">
           <div className="row">

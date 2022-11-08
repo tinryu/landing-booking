@@ -31,22 +31,22 @@ export default function cover() {
         className="swiper-cover"
       >
         <SwiperSlide>
-          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} />
+          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} priority={true} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} />
+          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} priority={true}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} />
+          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} priority={true}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} />
+          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} priority={true}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} />
+          <Image src="/assets/images/cover1.png" alt="logo" layout="raw" width={962} height={488} priority={true}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="raw" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" layout="raw" width={1170} height={588} priority={true}/>
         </SwiperSlide>
         <div className="navigation d-flex mt-3">
             <div className="d-flex flex-wrap justify-content-between">
