@@ -21,7 +21,7 @@ export default function DetailNews() {
             <h4 className="text-center">
               Integer quis sapien neceli ultrices euismod.
             </h4>
-            <Image src="/assets/images/detail.png" layout="responsive" alt="home"/>
+            <Image src="/assets/images/detail.png" layout="responsive" width={1290} height={631} alt="home"/>
             <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,

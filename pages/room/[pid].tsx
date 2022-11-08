@@ -12,7 +12,7 @@ export default function DetailRoom() {
   const router = useRouter();
   const [checkIn, setCheckIn] = useState("2022-04-21");
   const [checkOut, setCheckOut] = useState("2022-04-30");
-  if (router.isFallback) {
+  // if (router.isFallback) {
     return (
       <div>
         <Cover />
@@ -219,7 +219,7 @@ export default function DetailRoom() {
         </div>
       </div>
     )
-  }
+  // }
 }
 
 DetailRoom.getLayout = function getLayout(page: ReactElement) {

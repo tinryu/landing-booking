@@ -48,7 +48,7 @@ const data = [{
     src: '/assets/images/room-pic.png',
     width: 320,
     height: 180,
-    link: '/room/1'
+    link: '/room/2'
   },
   title: 'Premier Room: Premier Room King',
   des: 'Sleeps 2 | 2 Twin | 19 to 20m2',
@@ -90,7 +90,7 @@ const data = [{
     src: '/assets/images/room-pic.png',
     width: 320,
     height: 180,
-    link: '/room/1'
+    link: '/room/3'
   },
   title: 'Premier Room: Premier Room King',
   des: 'Sleeps 2 | 2 Twin | 19 to 20m2',
@@ -136,7 +136,9 @@ export default function ListView() {
         <div className="row mb-5" key={item.title+index}>
           <div className="col-lg-4 col-md-4 image">
             <Link href={item.image.link} passHref>
-              <Image alt={item.title} src={item.image.src} width={item.image.width} height={item.image.height} layout="responsive" priority={true} />
+              <span>
+                <Image alt={item.title} src={item.image.src} width={item.image.width} height={item.image.height} layout="responsive" priority={true} />
+              </span>
             </Link>
           </div>
           <div className="col-lg-6 col-md-5 info">

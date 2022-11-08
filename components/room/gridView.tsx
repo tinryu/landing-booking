@@ -48,7 +48,7 @@ const data = [{
     src: '/assets/images/room-pic.png',
     width: 320,
     height: 180,
-    link: '/room/1'
+    link: '/room/2'
   },
   title: 'Premier Room: Premier Room King',
   des: 'Sleeps 2 | 2 Twin | 19 to 20m2',
@@ -90,7 +90,7 @@ const data = [{
     src: '/assets/images/room-pic.png',
     width: 320,
     height: 180,
-    link: '/room/1'
+    link: '/room/3'
   },
   title: 'Premier Room: Premier Room King',
   des: 'Sleeps 2 | 2 Twin | 19 to 20m2',
@@ -137,6 +137,7 @@ export default function GridView() {
         <div className="col-lg-4" key={item.title + index}>
           <div className="item mb-4">
           <Link href={item.image.link} passHref>
+            <span>
             <Image
                 src={item.image.src}
                 width={item.image.width}
@@ -144,7 +145,8 @@ export default function GridView() {
                 layout="responsive"
                 className="image"
                 alt="grid"
-              />
+            />
+            </span>
           </Link>
             <div className="info">
               <h5 className="title">{item.title}</h5>
@@ -166,7 +168,7 @@ export default function GridView() {
                 <span className="text ps-2">Per night</span>
               </div>
               <Link href={item.image.link} passHref>
-                <span  className="btn btn-booking">
+                <span className="btn btn-booking">
                   Booking now
                 </span>
               </Link>

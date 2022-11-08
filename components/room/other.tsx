@@ -72,11 +72,13 @@ export default function App() {
             {data.map((item, index) => (
                 <SwiperSlide className="item" key={item.title + index}>
                     <Link href={item.link} passHref>
+                        <>
                         <Image alt="other" src={item.src} width={item.width} height={item.height} layout="raw" className="img" />
                         <div className="title">
                             <h4 className="text">{item.title}</h4>
                             <div className="des">{item.des}</div>
                         </div>
+                        </>
                     </Link>
                 </SwiperSlide>
             ))}
