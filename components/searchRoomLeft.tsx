@@ -6,9 +6,9 @@ export default function SearchRoomLeft() {
   let page: string;
   let button: string;
   let name: string;
-  page = "search-room-left";
-  button = "btn btn-booking";
-  name = "Booking Now";
+  page = "search-room-left"
+  button = "btn btn-booking"
+  name = "Booking Now"
 
   return (
     <div className={page}>
