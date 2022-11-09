@@ -49,9 +49,7 @@ export default function Services() {
             >
               Weddings
             </TabSelector>
-
           </div>
-
         </div>
         <div className="content-bar container">
           <TabPanel hidden={selectedTab !== "food"}><Foods/></TabPanel>
