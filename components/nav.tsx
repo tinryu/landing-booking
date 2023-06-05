@@ -18,10 +18,8 @@ export default function Nav() {
   return (
     <nav className="menu-top navbar navbar-expand-lg">
       <div className="container-fluid">
-        <Link href="/">
-          <a className="navbar-brand">
-            <Image src={LogoPic} alt="logo" />
-          </a>
+        <Link href="/" className="navbar-brand">
+          <Image src={LogoPic} alt="logo" />
         </Link>
         <button
           className="navbar-toggler"
@@ -38,10 +36,8 @@ export default function Nav() {
           aria-labelledby="offcanvasRightLabel"
         >
           <div className="offcanvas-header">
-            <Link href="/">
-              <a className="navbar-brand">
-                <Image src={LogoPic} alt="logo" />
-              </a>
+            <Link href="/" className="navbar-brand">
+              <Image src={LogoPic} alt="logo" />
             </Link>
             <button
               type="button"
@@ -55,10 +51,8 @@ export default function Nav() {
               {menu.map((item, index) => {
                 return (
                   <li key={item.id} className="nav-item">
-                    <Link href={item.path}>
-                      <a className={`nav-link ${router.pathname === item.path ? 'active' : ''}`} >
-                        {item.title}
-                      </a>
+                    <Link href={item.path} className={`nav-link ${router.pathname === item.path ? 'active' : ''}`}>
+                      {item.title}
                     </Link>
                   </li>
                 )

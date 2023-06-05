@@ -64,13 +64,13 @@ export default function Gallery() {
 function ViewFood() {
     return (
         <div className="gallery-food">
-            <div className="pic pic-1"><Image src={'/assets/images/1.png'} layout="raw" priority={true} width={312} height={270} alt="picture" /></div>
-            <div className="pic pic-2"><Image src={'/assets/images/2.png'} layout="raw" priority={true} width={312} height={270} alt="picture" /></div>
-            <div className="pic pic-3"><Image src={'/assets/images/3.png'} layout="raw" priority={true} width={648} height={270} alt="picture" /></div>
-            <div className="pic pic-4"><Image src={'/assets/images/4.png'} layout="raw" priority={true} width={648} height={564} alt="picture" /></div>
-            <div className="pic pic-5"><Image src={'/assets/images/5.png'} layout="raw" priority={true} width={648} height={270} alt="picture" /></div>
-            <div className="pic pic-6"><Image src={'/assets/images/6.png'} layout="raw" priority={true} width={312} height={270} alt="picture" /></div>
-            <div className="pic pic-7"><Image src={'/assets/images/7.png'} layout="raw" priority={true} width={312} height={270} alt="picture" /></div>
+            <div className="pic pic-1"><Image src={'/assets/images/1.png'} priority={true} width={312} height={270} alt="picture" /></div>
+            <div className="pic pic-2"><Image src={'/assets/images/2.png'} priority={true} width={312} height={270} alt="picture" /></div>
+            <div className="pic pic-3"><Image src={'/assets/images/3.png'} priority={true} width={648} height={270} alt="picture" /></div>
+            <div className="pic pic-4"><Image src={'/assets/images/4.png'} priority={true} width={648} height={564} alt="picture" /></div>
+            <div className="pic pic-5"><Image src={'/assets/images/5.png'} priority={true} width={648} height={270} alt="picture" /></div>
+            <div className="pic pic-6"><Image src={'/assets/images/6.png'} priority={true} width={312} height={270} alt="picture" /></div>
+            <div className="pic pic-7"><Image src={'/assets/images/7.png'} priority={true} width={312} height={270} alt="picture" /></div>
         </div>
     )
 }

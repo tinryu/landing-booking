@@ -137,7 +137,7 @@ export default function ListView() {
           <div className="col-lg-4 col-md-4 image">
             <Link href={item.image.link} passHref>
               <span>
-                <Image alt={item.title} src={item.image.src} width={item.image.width} height={item.image.height} layout="responsive" priority={true} />
+                <Image alt={item.title} src={item.image.src} width={item.image.width} height={item.image.height} priority={true} />
               </span>
             </Link>
           </div>

@@ -8,7 +8,7 @@ export default class CenterMode extends Component {
       customPaging: function(i) {
         return (
           <a>
-            <Image alt="slide" src={`${baseUrl}/cover${i + 1}.png`} layout="raw" width={162} height={85}/>
+            <Image alt="slide" src={`${baseUrl}/cover${i + 1}.png`} width={162} height={85}/>
           </a>
         );
       },
@@ -24,16 +24,16 @@ export default class CenterMode extends Component {
         <h2>Custom Paging</h2>
         <Slider {...settings}>
           <div>
-            <Image alt="slide" src={baseUrl + "/cover1.png"} layout="responsive" width={647} height={342}/>
+            <Image alt="slide" src={baseUrl + "/cover1.png"} width={647} height={342}/>
           </div>
           <div>
-          <Image alt="slide" src={baseUrl + "/cover2.png"} layout="responsive" width={647} height={342}/>
+          <Image alt="slide" src={baseUrl + "/cover2.png"} width={647} height={342}/>
           </div>
           <div>
-          <Image alt="slide" src={baseUrl + "/cover3.png"} layout="responsive" width={647} height={342}/>
+          <Image alt="slide" src={baseUrl + "/cover3.png"} width={647} height={342}/>
           </div>
           <div>
-          <Image alt="slide" src={baseUrl + "/cover3.png"} layout="responsive" width={647} height={342}/>
+          <Image alt="slide" src={baseUrl + "/cover3.png"} width={647} height={342}/>
           </div>
         </Slider>
       </div>

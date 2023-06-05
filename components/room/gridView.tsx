@@ -142,7 +142,6 @@ export default function GridView() {
                 src={item.image.src}
                 width={item.image.width}
                 height={item.image.height}
-                layout="responsive"
                 className="image"
                 alt="grid"
             />

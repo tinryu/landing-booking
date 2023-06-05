@@ -99,7 +99,7 @@ export default function Contact() {
         </div>
       </section>
       <section className="map">
-        <Image src={'/assets/images/map.png'} layout="responsive" width={1920} height={720} alt="map" />
+        <Image src={'/assets/images/map.png'} width={1920} height={720} alt="map" />
       </section>
     </>
   );

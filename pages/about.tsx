@@ -32,7 +32,6 @@ export default function About() {
                     src="/assets/images/about1.png"
                     width={401}
                     height={499}
-                    layout="raw"
                     alt="about"
                   />
                 </div>
@@ -41,7 +40,6 @@ export default function About() {
                     src="/assets/images/about3.png"
                     width={277}
                     height={244}
-                    layout="raw"
                     alt="about"
                   />
                 </div>
@@ -52,7 +50,6 @@ export default function About() {
                     src="/assets/images/about2.png"
                     width={421}
                     height={275}
-                    layout="raw"
                     alt="about"
                   />
                 </div>
@@ -61,7 +58,6 @@ export default function About() {
                     src="/assets/images/about4.png"
                     width={663}
                     height={344}
-                    layout="raw"
                     alt="about"
                   />
                 </div>
@@ -133,7 +129,6 @@ export default function About() {
               <div className="col-lg-6">
                 <Image
                   src="/assets/images/bedpic.png"
-                  layout="responsive"
                   width={633}
                   height={318}
                   alt="about"

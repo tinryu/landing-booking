@@ -40,67 +40,67 @@ export default function DetailRoom() {
                 <ul className="accessories row">
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} className="icon" />
                       <label>Cable and satellite TV</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/mini-bar.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/mini-bar.png" width={20} height={20} className="icon" />
                       <label>Mini-bar</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/house-keeping.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/house-keeping.png" width={20} height={20} className="icon" />
                       <label>HouseKeeping</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} className="icon" />
                       <label>Cable and satellite TV</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/working-desk.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/working-desk.png" width={20} height={20} className="icon" />
                       <label>Working desk</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/iron.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/iron.png" width={20} height={20} className="icon" />
                       <label>Iron and ironing board</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/coffee-tea.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/coffee-tea.png" width={20} height={20} className="icon" />
                       <label>Coffee / Tea maker</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} className="icon" />
                       <label>Cable and satellite TV</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/wine-bottle.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/wine-bottle.png" width={20} height={20} className="icon" />
                       <label>Free bottled water</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/blackout.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/blackout.png" width={20} height={20} className="icon" />
                       <label>Blackout curtains</label>
                     </div>
                   </li>
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/air-condition.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/air-condition.png" width={20} height={20} className="icon" />
                       <label>Air conditioning</label>
                     </div>
                   </li>
@@ -111,19 +111,19 @@ export default function DetailRoom() {
                 <ul className="accessories row">
                   <li className="col-lg-4 col-6">
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/air-condition.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/air-condition.png" width={20} height={20} className="icon" />
                       <label>Air conditioning</label>
                     </div>
                   </li>
                   <li className='col-lg-4 col-6'>
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/cable-tv.png" width={20} height={20} className="icon" />
                       <label>Cable and satellite TV</label>
                     </div>
                   </li>
                   <li className='col-lg-4 col-6'>
                     <div className="item">
-                      <Image alt="room" src="/assets/icon/wine-bottle.png" width={20} height={20} layout="raw" className="icon" />
+                      <Image alt="room" src="/assets/icon/wine-bottle.png" width={20} height={20} className="icon" />
                       <label>Free bottled water</label>
                     </div>
                   </li>

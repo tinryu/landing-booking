@@ -74,7 +74,7 @@ export default function SwipeToSlide() {
         {data.map((item, index) => {
           return (
             <div className="items" key={item.title + index}>
-              <Image src={item.src} alt={item.title} layout="fill" />
+              <Image src={item.src} alt={item.title} />
               <h4>{item.title}</h4>
             </div>
           )

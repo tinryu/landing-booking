@@ -21,7 +21,7 @@ export default function DetailNews() {
             <h4 className="text-center">
               Integer quis sapien neceli ultrices euismod.
             </h4>
-            <Image src="/assets/images/detail.png" layout="responsive" width={1290} height={631} alt="home"/>
+            <Image src="/assets/images/detail.png" width={1290} height={631} alt="home"/>
             <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
@@ -98,7 +98,6 @@ export default function DetailNews() {
                   src="/assets/images/news1.png"
                   width={300}
                   height={320}
-                  layout="intrinsic"
                   alt="news-detail"
                 />
                 <div className="card-body">
@@ -125,7 +124,6 @@ export default function DetailNews() {
                   src="/assets/images/news1.png"
                   width={300}
                   height={320}
-                  layout="intrinsic"
                   alt="news-detail"
                 />
                 <div className="card-body">
@@ -152,7 +150,6 @@ export default function DetailNews() {
                   src="/assets/images/news1.png"
                   width={300}
                   height={320}
-                  layout="intrinsic"
                   alt="news-detail"
                 />
                 <div className="card-body">
@@ -179,7 +176,6 @@ export default function DetailNews() {
                   src="/assets/images/news1.png"
                   width={300}
                   height={320}
-                  layout="intrinsic"
                   alt="news-detail"
                 />
                 <div className="card-body">

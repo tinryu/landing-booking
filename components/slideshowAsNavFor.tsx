@@ -33,7 +33,7 @@ function CustomSlide(props) {
   const { index, img, total } = props;
   return (
     <div className="item">
-      <Image alt="slide" src={img} layout="raw" width={100} height={100} />
+      <Image alt="slide" src={img} width={100} height={100} />
     </div>
   );
 }
@@ -71,22 +71,22 @@ export default class AsNavFor extends Component<{}, Navstate> {
           prevArrow={<PrevArrow />}
         >
           <div className="items">
-            <Image src="/assets/images/service1.png" alt="slide" layout='raw' width={707} height={685}/>
+            <Image src="/assets/images/service1.png" alt="slide" width={707} height={685}/>
             <h4>Food1 & Beverage</h4>
             <div className="pagin">01/04</div>
           </div>
           <div className="items">
-            <Image src="/assets/images/service2.png" alt="slide" layout='raw' width={707} height={685}/>
+            <Image src="/assets/images/service2.png" alt="slide" width={707} height={685}/>
             <h4>Food2 & Beverage</h4>
             <div className="pagin">02/04</div>
           </div>
           <div className="items">
-            <Image src="/assets/images/service3.png" alt="slide" layout='raw' width={707} height={685}/>
+            <Image src="/assets/images/service3.png" alt="slide" width={707} height={685}/>
             <h4>Food3 & Beverage</h4>
             <div className="pagin">03/04</div>
           </div>
           <div className="items">
-            <Image src="/assets/images/service4.png" alt="slide" layout='raw' width={707} height={685}/>
+            <Image src="/assets/images/service4.png" alt="slide" width={707} height={685}/>
             <h4>Food4 & Beverage</h4>
             <div className="pagin">04/04</div>
           </div>

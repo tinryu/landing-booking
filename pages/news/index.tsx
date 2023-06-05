@@ -98,7 +98,6 @@ export default function News() {
                   src="/assets/images/news1.png"
                   width={745}
                   height={444}
-                  layout="raw"
                   alt="news"
                 />
                 <div className="cover">
@@ -124,7 +123,6 @@ export default function News() {
                         src="/assets/images/pic2.png"
                         width={128}
                         height={128}
-                        layout="raw"
                         alt="news"
                       />
                     </Link>
@@ -149,7 +147,6 @@ export default function News() {
                         src="/assets/images/pic2.png"
                         width={128}
                         height={128}
-                        layout="raw"
                         alt="news"
                       />
                     </Link>
@@ -174,7 +171,6 @@ export default function News() {
                         src="/assets/images/pic3.png"
                         width={128}
                         height={128}
-                        layout="raw"
                         alt="news"
                       />
                     </Link>
@@ -207,7 +203,6 @@ export default function News() {
                   src={item.images.src}
                   width={item.images.width}
                   height={item.images.height}
-                  layout="intrinsic"
                   alt="news"
                 />
                 <div className="card-body">

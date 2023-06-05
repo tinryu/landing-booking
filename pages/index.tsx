@@ -25,7 +25,6 @@ export default function Page() {
                     src="/assets/images/pic1.png"
                     width={279}
                     height={348}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -34,7 +33,6 @@ export default function Page() {
                     src="/assets/images/pic3.png"
                     width={297}
                     height={254}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -45,7 +43,6 @@ export default function Page() {
                     src="/assets/images/pic2.png"
                     width={312}
                     height={298}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -54,7 +51,6 @@ export default function Page() {
                     src="/assets/images/pic4.png"
                     width={312}
                     height={254}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -91,23 +87,20 @@ export default function Page() {
                       src="/assets/icon/food24.png"
                       width={24}
                       height={24}
-                      layout="intrinsic"
                       alt="home"
                     />
                   </div>
-                  <Link href="#" passHref>
-                    <span className="content">
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        className="arrow-right"
-                      />
-                      <h3>Food & Beverage</h3>
-                      <p>
-                        A culinary destination with a variety of restaurants
-                        offering a satisfying array of fresh, delicious menu
-                        choices, from casual to fine dining.
-                      </p>
-                    </span>
+                  <Link href="#" passHref className="content">
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="arrow-right"
+                    />
+                    <h3>Food & Beverage</h3>
+                    <p>
+                      A culinary destination with a variety of restaurants
+                      offering a satisfying array of fresh, delicious menu
+                      choices, from casual to fine dining.
+                    </p>
                   </Link>
                 </li>
                 <li className="item">
@@ -116,11 +109,10 @@ export default function Page() {
                       src="/assets/icon/room24.png"
                       width={24}
                       height={24}
-                      layout="intrinsic"
                       alt="home"
                     />
                   </div>
-                  <a href="#" className="content">
+                  <Link href="#" passHref className="content">
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="arrow-right"
@@ -130,7 +122,7 @@ export default function Page() {
                       Our guestrooms and suites offers luxury and elegance,
                       efficiency and comfort.
                     </p>
-                  </a>
+                  </Link>
                 </li>
                 <li className="item">
                   <div className="icon">
@@ -138,11 +130,10 @@ export default function Page() {
                       src="/assets/icon/meeting24.png"
                       width={24}
                       height={24}
-                      layout="intrinsic"
                       alt="home"
                     />
                   </div>
-                  <a href="#" className="content">
+                  <Link href="#" passHref className="content">
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="arrow-right"
@@ -153,7 +144,7 @@ export default function Page() {
                       complemented with personal service from hotel meeting
                       specialists.
                     </p>
-                  </a>
+                  </Link>
                 </li>
                 <li className="item">
                   <div className="icon">
@@ -161,19 +152,16 @@ export default function Page() {
                       src="/assets/icon/wedding24.png"
                       width={24}
                       height={24}
-                      layout="intrinsic"
                       alt="home"
                     />
                   </div>
-                  <Link href="#" passHref>
-                    <span className="content">
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        className="arrow-right"
-                      />
-                      <h3>Weddings</h3>
-                      <p>What you can imagine, we can make happen.</p>
-                    </span>
+                  <Link href="#" passHref className="content">
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="arrow-right"
+                    />
+                    <h3>Weddings</h3>
+                    <p>What you can imagine, we can make happen.</p>
                   </Link>
                 </li>
               </ul>
@@ -210,7 +198,6 @@ export default function Page() {
                     src="/assets/images/news1.png"
                     width={300}
                     height={320}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -234,7 +221,6 @@ export default function Page() {
                     src="/assets/images/news2.png"
                     width={300}
                     height={320}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -258,7 +244,6 @@ export default function Page() {
                     src="/assets/images/news3.png"
                     width={300}
                     height={320}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>
@@ -282,7 +267,6 @@ export default function Page() {
                     src="/assets/images/news4.png"
                     width={300}
                     height={320}
-                    layout="responsive"
                     alt="home"
                   />
                 </div>

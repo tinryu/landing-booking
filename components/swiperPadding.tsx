@@ -31,22 +31,22 @@ export default function SwiperPadding(props) {
         className="swiper-padding"
       >
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="responsive" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" width={1170} height={588}  />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="responsive" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" width={1170} height={588} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="responsive" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" width={1170} height={588} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="responsive" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" width={1170} height={588} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="responsive" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" width={1170} height={588} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/room.png" alt="logo" layout="responsive" width={1170} height={588} />
+          <Image src="/assets/images/room.png" alt="logo" width={1170} height={588} />
         </SwiperSlide>
         <div className="navigation d-flex mt-3">
             <div className="d-flex flex-wrap justify-content-between">
